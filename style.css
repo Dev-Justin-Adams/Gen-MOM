@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    font-weight: 700;
+    font-family: 'Comic Neue';
+}
+html, body {
+    overflow-x: hidden;
+}
+/* Regular */
+@font-face {
+    font-family: 'Comic Neue';
+    src: url('./ComicNeue-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* Bold */
+  @font-face {
+    font-family: 'Comic Neue';
+    src: url('./ComicNeue-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  /* Italic */
+  @font-face {
+    font-family: 'Comic Neue';
+    src: url('./ComicNeue-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  /* Bold Italic */
+  @font-face {
+    font-family: 'Comic Neue';
+    src: url('./ComicNeue-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  /* Light */
+  @font-face {
+    font-family: 'Comic Neue';
+    src: url('./ComicNeue-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  /* Light Italic */
+  @font-face {
+    font-family: 'Comic Neue';
+    src: url('./ComicNeue-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+  }
+body {
+    background-color: #b1b6ff; 
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+/*mental health colors are apparently teal green #008080*/
+body.dark-mode {
+    background-color: #0d002d; 
+    color: #c5c5c5;
+}
+
+.toggle-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.2em;
+}
+
+body.dark-mode .toggle-button {
+    background-color: #444;
+}
+
+.toggle-button.dark-mode {
+    background-color: #444;
+    color: #fff;
+}
+
+.nav-bar {
+    background-color: #000000ab;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+nav ul li:last-child {
+    flex: 0;
+    /*margin-left: auto;*/
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+#center {
+    display: inline-block;
+}
+.logo {
+    height: 45px;
+    border-radius: 5px;
+    flex: 0;
+    /*margin-left: auto;*/
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    transition: all 0.2s ease;
+}
+nav a:hover, span:hover {
+    color: rgb(234, 255, 216);
+}
+
+section {
+    min-height: 70vh;   
+}
+h1 {
+    font-size: 560%;
+}
+.a {
+    background-color: #00000021;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.i {
+    padding: 10%;
+}
+.ii {
+    text-align: right;
+    background-color: #2d291575;
+    padding: 15%;
+    text-align: center;
+}
+.ii p {
+    font-size: 120%;
+    padding: 5%;
+    margin-top: 5%;
+}
+.b {
+    background-color: #00000054;
+    padding: 6%;
+    text-align: center;
+}
+.box-links {
+    background-color: black;
+    color: white;
+    height: 40%;
+    width: 40%;
+    margin: 0 auto;
+    transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+    display: flexbox;
+}
+.box-links:hover {
+    transform: scale(1.01);
+}
+
+#Web3 {
+    background-image: url('back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.b a {
+   color: inherit;
+   text-decoration: none; 
+}
+.b p {
+    font-size: 170%;
+    padding: 2%;
+    font-weight: bolder;
+}
+
+.c {
+    background-color: #00000080;
+}
+.d {    
+    background-color: #000000a1;
+    padding: 5%;
+    text-align: center;
+}
+.d p {
+    font-size: 170%;
+    padding: 3%;
+}
+.d h2 {
+    padding: 2%;
+}
+.d ul li {
+    font-size: 140%;
+}
+
+.e {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+.e div {
+    border: 5px black solid;
+    border-radius: 6%;
+    width: 80%;
+    margin: 0 auto;
+    height: 80%;
+}
+* {
+    margin: 0;
+    font-weight: 700;
+    font-family: 'Comic Neue';
+}
+
+html, body {
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+body {
+    background-color: #b1b6ff;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Responsive font sizes and layout */
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Responsive Grid */
+.a, .e {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.a .ii, .e div {
+    padding: 20px;
+    background-color: #2d291575;
+    text-align: center;
+}
+
+/* For larger screens */
+@media(min-width: 768px) {
+    .a {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .e {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Toggle button and dark mode */
+.toggle-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+body.dark-mode {
+    background-color: #0d002d;
+    color: #c5c5c5;
+}
+
+/* Navigation */
+.nav-bar {
+    background-color: #000000ab;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        background-color: #333;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    nav ul.open {
+        height: 200px;
+    }
+}
+
+/* Donations and Contact Section */
+.donations, .contact {
+    border: 5px black solid;
+    border-radius: 6%;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.donations h2, .contact h2 {
+    font-size: 2rem;
+}

@@ -1,0 +1,89 @@
+/* General reset and body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5; /* Light theme background */
+    color: #333; /* Dark text */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header section styling */
+header {
+    background-color: #2d3436; /* Dark background */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+/* Section styling */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2em;
+    color: #16a085; /* Accent color for headings */
+    margin-bottom: 15px;
+}
+
+section h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+section p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* Footer styling */
+footer {
+    background-color: #2d3436;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 0 0 8px 8px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    section h2 {
+        font-size: 1.7em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+}
