@@ -381,3 +381,59 @@ nav ul li a {
 .donations h2, .contact h2 {
     font-size: 2rem;
 }
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 5%;
+}
+
+.gallery-item {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.video-container {
+    margin: 2rem auto;
+    width: 90%;
+}
+
+.video-container video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Donations styling */
+.donations {
+    text-align: center;
+    padding: 20px;
+    background-color: #2d291575;
+    border-radius: 10px;
+}
+
+.donation-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #008080;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.donation-button:hover {
+    background-color: #004f4f;
+}
+
+/* Mobile responsiveness adjustments for gallery and video */
+@media screen and (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .video-container {
+        width: 100%;
+    }
+}
